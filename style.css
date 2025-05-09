@@ -1,0 +1,76 @@
+/* Use a clean sans-serif font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0f0f0f;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main heading */
+h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #00fff7;
+    text-shadow: 0 0 10px #00fff7;
+}
+
+/* Section/project container */
+.project, .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    background: transparent;
+}
+
+/* Individual project block text (for index.html) */
+.project-text {
+    padding: 10px;
+}
+
+.project h2 {
+    font-size: 20px;
+    color: #00fff7;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+/* Images and videos */
+.project img, .project video,
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #00fff7;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project img:hover, .project video:hover,
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px #00fff7;
+}
+
+/* Links and buttons */
+a, a.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid #00fff7;
+    color: #00fff7;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background 0.3s, color 0.3s;
+}
+
+a:hover, a.back-link:hover {
+    background: #00fff7;
+    color: #0f0f0f;
+}
