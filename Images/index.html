@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2 Gallery</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff6f61;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+
+        a:hover {
+            background: #ff00ff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Project 2: Monster Gallery</h1>
+
+    <div class="gallery">
+        <img src="images/monster_1.png" alt="Monster 1">
+        <img src="images/monster_2.png" alt="Monster 2">
+        <img src="images/monster_3.png" alt="Monster 3">
+        <img src="images/monster_4.png" alt="Monster 4">
+    </div>
+
+    <a href="index.html">⬅ Back to Portfolio</a>
+</body>
+</html>
