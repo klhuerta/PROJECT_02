@@ -6,50 +6,56 @@
     <title>Project 2 Gallery</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(90deg, #ff9a9e, #fad0c4);
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0f0f0f;
+            color: #fff;
             margin: 0;
             padding: 20px;
             text-align: center;
         }
 
         h1 {
-            font-size: 24px;
-            margin-bottom: 20px;
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #00fff7;
+            text-shadow: 0 0 10px #00fff7;
         }
 
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            max-width: 900px;
+            gap: 25px;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
         .gallery img {
             width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            transition: transform 0.3s;
+            border-radius: 12px;
+            box-shadow: 0 0 20px #00fff7;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .gallery img:hover {
             transform: scale(1.05);
+            box-shadow: 0 0 40px #00fff7;
         }
 
-        a {
+        a.back-link {
             display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: #ff6f61;
-            color: #fff;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: transparent;
+            border: 2px solid #00fff7;
+            color: #00fff7;
             text-decoration: none;
-            border-radius: 20px;
+            border-radius: 30px;
+            transition: background 0.3s, color 0.3s;
         }
 
-        a:hover {
-            background: #ff00ff;
+        a.back-link:hover {
+            background: #00fff7;
+            color: #0f0f0f;
         }
     </style>
 </head>
@@ -57,12 +63,12 @@
     <h1>Project 2: Monster Gallery</h1>
 
     <div class="gallery">
-        <img src="images/monster_1.png" alt="Monster 1">
-        <img src="images/monster_2.png" alt="Monster 2">
-        <img src="images/monster_3.png" alt="Monster 3">
-        <img src="images/monster_4.png" alt="Monster 4">
+        <img src="PROJECT_02/images/monster_1.png" alt="Monster 1">
+        <img src="PROJECT_02/images/monster_2.png" alt="Monster 2">
+        <img src="PROJECT_02/images/monster_3.png" alt="Monster 3">
+        <img src="PROJECT_02/images/monster_4.png" alt="Monster 4">
     </div>
 
-    <a href="index.html">⬅ Back to Portfolio</a>
+    <a class="back-link" href="index.html">⬅ Back to Portfolio</a>
 </body>
 </html>
